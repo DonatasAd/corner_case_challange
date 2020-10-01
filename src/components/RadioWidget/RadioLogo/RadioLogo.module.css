@@ -1,0 +1,13 @@
+.Root {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  height: 8rem;
+  border-radius: 50%;
+  border: 1px solid #a2abbd;;
+}

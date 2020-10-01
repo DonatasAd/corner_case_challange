@@ -1,0 +1,51 @@
+.ListItem {
+  list-style: none;
+}
+
+.HorizontalLine {
+  border: none;
+  height: 1px;
+  color: #4d505c; /* old IE */
+  background-color: #4d505c; /* Modern Browsers */
+  margin: 0;
+}
+
+.RadioTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #a2abbd;
+  font-weight: 400;
+  font-size: 2em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Frequency {
+  font-weight: 700;
+}
+
+.Button {
+  width: 100%;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+.Button:hover {
+  cursor: pointer;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+.Button:active {
+  outline: none;
+  border: none;
+}
+
+.Button:focus {
+  outline: 0;
+}

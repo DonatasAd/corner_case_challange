@@ -1,0 +1,19 @@
+.Tabbar {
+  background-color: #22222b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 2.5rem;
+  padding: 1.5rem;
+  border-top: 1px solid #4d505c;
+}
+.Title {
+  margin: 0;
+  color: #9da6b9;
+  font-weight: 400;
+}
+.SubTitle {
+  margin: 0;
+  color: #edae61;
+}

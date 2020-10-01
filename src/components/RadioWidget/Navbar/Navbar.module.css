@@ -1,0 +1,15 @@
+.Navbar {
+  background-color: #edae61;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  height: 2.5rem;
+}
+
+.Title {
+  font-size: 1.5em;
+  color: white;
+  margin: 0;
+}

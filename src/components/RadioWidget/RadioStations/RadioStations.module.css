@@ -1,0 +1,15 @@
+.Root {
+  flex: 1 0 20%;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.Root::-webkit-scrollbar {
+  display: none;
+}
+
+.List {
+  padding: 0rem;
+  margin: 1rem;
+}

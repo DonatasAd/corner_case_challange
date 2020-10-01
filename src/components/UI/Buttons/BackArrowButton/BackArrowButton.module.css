@@ -1,0 +1,29 @@
+.Logo {
+  height: 100%;
+}
+
+.Button {
+  padding: 0;
+  height: 1.7rem;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+.Button:hover {
+  cursor: pointer;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+.Button:active {
+  outline: none;
+  border: none;
+}
+
+.Button:focus {
+  outline: 0;
+}
