@@ -5,11 +5,10 @@ import { connect } from 'react-redux';
 import * as radioStationsActions from '../../../store/actions/radioStations';
 import PropTypes from 'prop-types';
 
-function RadioStations({ fetchRadiosStations, radioStations }) {
+export function RadioStations({ fetchRadiosStations, radioStations }) {
   useEffect(() => {
     fetchRadiosStations();
   }, [fetchRadiosStations]);
-
   return (
     <div className={styles.Root}>
       <ul className={styles.List}>
@@ -20,8 +19,8 @@ function RadioStations({ fetchRadiosStations, radioStations }) {
 }
 
 RadioStations.propTypes = {
-  radioStations: PropTypes.array.isRequired,
-  fetchRadiosStations: PropTypes.func.isRequired
+  radioStations: PropTypes.array,
+  fetchRadiosStations: PropTypes.func,
 };
 
 const mapDispatchToProps = {

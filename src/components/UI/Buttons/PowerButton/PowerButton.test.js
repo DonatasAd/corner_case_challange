@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import BackArrowButton from './BackArrowButton';
+import PowerButton from './PowerButton';
 
-describe('BackArrowButton', () => {
+describe('PowerButton', () => {
   it('should render correctly in "debug" mode', () => {
-    const component = shallow(<BackArrowButton />);
+    const component = shallow(<PowerButton  />);
     expect(component).toMatchSnapshot();
   });
 });

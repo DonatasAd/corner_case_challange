@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import BackArrowButton from './BackArrowButton';
+import RadioLogo from './RadioLogo';
 
-describe('BackArrowButton', () => {
+describe('RadioLogo', () => {
   it('should render correctly in "debug" mode', () => {
-    const component = shallow(<BackArrowButton />);
+    const component = shallow(<RadioLogo />);
     expect(component).toMatchSnapshot();
   });
 });

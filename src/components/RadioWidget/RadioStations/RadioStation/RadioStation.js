@@ -4,18 +4,20 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as radioStationsActions from '../../../../store/actions/radioStations';
 import RadioLogo from '../../RadioLogo/RadioLogo';
-function RadioStation({ radio, currentRadio, appendLine, setCurrentRadio }) {
+export function RadioStation({ radio, currentRadio, appendLine, setCurrentRadio }) {
   const radioChangeHandler = () => setCurrentRadio(radio.name);
 
   return (
     <li className={styles.ListItem}>
-      {radio.name === currentRadio && <RadioLogo />}
-      <button className={styles.Button} aria-label={`Change station to ${radio.name}`} onClick={radioChangeHandler}>
-        <h2 className={styles.RadioTitle}>
-          {radio.name}
-          <span className={styles.Frequency}>{radio.frequency}</span>
-        </h2>
-      </button>
+      {radio && radio.name === currentRadio && <RadioLogo />}
+      {radio && (
+        <button className={styles.Button} aria-label={`Change station to ${radio.name}`} onClick={radioChangeHandler}>
+          <h2 className={styles.RadioTitle}>
+            {radio.name}
+            <span className={styles.Frequency}>{radio.frequency}</span>
+          </h2>
+        </button>
+      )}
       {appendLine && <hr className={styles.HorizontalLine} />}
     </li>
   );
@@ -26,8 +28,8 @@ RadioStation.propTypes = {
     name: PropTypes.string.isRequired,
     frequency: PropTypes.number.isRequired,
   }),
-  appendLine: PropTypes.bool.isRequired,
-  setCurrentRadio: PropTypes.func.isRequired,
+  appendLine: PropTypes.bool,
+  setCurrentRadio: PropTypes.func,
 };
 
 const mapDispatchToProps = {

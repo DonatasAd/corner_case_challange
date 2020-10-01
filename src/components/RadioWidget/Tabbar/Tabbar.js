@@ -3,7 +3,7 @@ import style from './Tabbar.module.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-function Tabbar({ currentRadio }) {
+export function Tabbar({ currentRadio }) {
   return (
     <div className={style.Tabbar}>
       {currentRadio && (
@@ -16,7 +16,7 @@ function Tabbar({ currentRadio }) {
   );
 }
 Tabbar.propTypes = {
-  currentRadio: PropTypes.string.isRequired,
+  currentRadio: PropTypes.string,
 };
 
 const mapStateToProps = (state) => ({

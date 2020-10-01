@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import BackArrowButton from './BackArrowButton';
+import Navbar from './Navbar';
 
-describe('BackArrowButton', () => {
+describe('Navbar', () => {
   it('should render correctly in "debug" mode', () => {
-    const component = shallow(<BackArrowButton />);
+    const component = shallow(<Navbar />);
     expect(component).toMatchSnapshot();
   });
 });
