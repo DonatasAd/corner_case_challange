@@ -1,4 +1,4 @@
-#Corner Case Code Challange
+### Corner Case Code Challange
 
 Thanks for joining recruitment for Frontend dev at Corner Case Technologies. We’ve a small task for you!
 This is simple Radio widget (you can find PSD and PNG files attached in letter). Can you make this stuff work?
